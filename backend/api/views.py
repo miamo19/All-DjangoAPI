@@ -20,4 +20,4 @@ def api_home(request, *args, **kwargs):
 
     json.dumps(dict(data['headers']))
     data['content_type'] = request.content_type
-    return JsonResponse({"message": "Hi there, This is your django API crash course", "name":"Hyacinth", "Age": 18})
+    return JsonResponse(data, {"message": "Hi there, This is your django API crash course", "name":"Hyacinth", "Age": 18})
