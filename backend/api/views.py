@@ -17,6 +17,9 @@ def api_home(request, *args, **kwargs):
 
     data['headers'] = request.headers   #request.META -->   (this cannot automaticaly convert to JSON)
     print(data['headers'])
+    
+    data['headers'] = dic(request.headers)
+    print(data['headers'])
 
     json.dumps(dict(data['headers']))
     data['content_type'] = request.content_type
