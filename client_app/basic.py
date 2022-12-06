@@ -5,5 +5,6 @@ response = requests.get(endpoint, params={"name": "Hyacinth"}, json={"MATRI":"UB
 # print(response.text)
 # print(response.status_code)
 print(response.json())
+print(response.status_code)
 
 
